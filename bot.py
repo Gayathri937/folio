@@ -33,7 +33,7 @@ def get_quote():
     except Exception as e:
         return f"Quote unavailable ({e})"
 
- def build_summary():
+def build_summary():
     """Assemble the full daily summary from all data sources."""
     today = date.today().strftime("%A, %d %B %Y")    
     weather = get_weather()
